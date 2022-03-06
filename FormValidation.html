@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <form action="/action_page.php" method="get" class="container">
+        
+        <h3>Personal Details</h3>
+        <div id="username">
+            <h5>Name :- </h5>
+            <div class="name-grid">
+                <div class="namegrid1 form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="First Name" required>
+                    <label for="floatingFirstName">First Name</label>
+                </div>
+                <div class="namegrid2 form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingMiddleName" placeholder="Middle Name (Optional)">
+                    <label for="floatingMiddleName">Middle Name (Optional)</label>
+                </div>
+                <div class="namegrid3 form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="Last Name" required>
+                    <label for="floatingLastName">Last Name</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="usergender">
+            <h5>Gender :- </h5>
+            <input type="radio" name="Gender" id="Male" required> Male 
+            <input type="radio" name="Gender" id="Female" required> Female 
+            <input type="radio" name="Gender" id="Others" required> Others
+        </div>
+
+        <div id="useraddress">
+            <h5>Address :- </h5>
+            <div class="address-grid">
+                <div class="addressgriditem form-floating mb">
+                    <input type="text" class="form-control" id="floatingStreetName" placeholder="Street Address">
+                    <label for="floatingStreetName">Street Address</label>
+                </div>
+                <div class="addressgriditem form-floating mb">
+                    <input type="text" class="form-control" id="floatingHouseName" placeholder="Apartment, suite etc">
+                    <label for="floatingHouseName">Apartment, suite etc</label>
+                </div>
+                <div class="addressgriditem form-floating mb">
+                    <select id="floatingStateName" name="statename" class="form-floating">
+                        <option value="placeholder" style="display: none;">State</option>
+                        <option value="ap">Andhra Pradesh</option>
+                        <option value="ar">Arunachal Pradesh</option>
+                        <option value="as">Assam</option>
+                        <option value="br">Bihar</option>
+                        <option value="ct">Chhattisgarh</option>
+                        <option value="dl">Delhi (NCT)</option>
+                        <option value="ga">Goa</option>
+                        <option value="gj">Gujarat</option>
+                        <option value="hr">Haryana</option>
+                        <option value="hp">Himachal Pradesh</option>
+                        <option value="jk">Jammu & Kashmir</option>
+                        <option value="jh">Jharkhand</option>
+                        <option value="ka">Karnataka</option>
+                        <option value="kl">Kerala</option>
+                        <option value="mp">Madhya Pradesh</option>
+                        <option value="mh">Maharashtra</option>
+                        <option value="mn">Manipur</option>
+                        <option value="ml">Meghalaya</option>
+                        <option value="mz">Mizoram</option>
+                        <option value="nl">Nagaland</option>
+                        <option value="or">Odisha</option>
+                        <option value="pb">Punjab</option>
+                        <option value="rj">Rajasthan</option>
+                        <option value="sk">Sikkim</option>
+                        <option value="tn">Tamil Nadu</option>
+                        <option value="tg">Telangana</option>
+                        <option value="tr">Tripura</option>
+                        <option value="up">Uttar Pradesh</option>
+                        <option value="ut">Uttarakhand</option>
+                        <option value="wb">West Bengal</option>
+                    </select>
+                </div>
+                <div class="addressgriditem form-floating mb">
+                    <select id="floatingDistrictName" name="districtname">
+                        <option value="placeholder" style="display: none;">District</option>
+                        
+                    </select>
+                </div>
+                <div class="addressgriditem item5 form-floating mb">
+                    <input type="text" class="form-control" id="floatingPIN" placeholder="Postal/ZIP Code">
+                    <label for="floatingPIN">Postal/ZIP Code</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="usercontact">
+            <h5>Contact Details :- </h5>
+            <div class="contact-grid">
+                <div class="contactgrid1 form-floating mb">
+                    <input type="number" class="form-control" id="floatingMobile" placeholder="Phone Number">
+                    <label for="floatingMobile">Phone Number</label>
+                </div>
+                <div class="contactgrid2 form-floating mb">
+                    <input type="number" class="form-control" id="floatingAlternate" placeholder="Alternate Phone Number (Optional)">
+                    <label for="floatingAlternate">Alternate Phone Number (Optional)</label>
+                </div>
+                <div class="contactgrid3 form-floating mb">
+                    <input type="mail" class="form-control" id="floatingPersonal" placeholder="Personal E-Mail">
+                    <label for="floatingPersonal">Personal E-Mail</label>
+                </div>
+                <div class="contactgrid4 form-floating mb">
+                    <input type="mail" class="form-control" id="floatingOffice" placeholder="Office E-Mail (Optional)">
+                    <label for="floatingOffice">Office E-Mail (Optional)</label>
+                </div>
+            </div>
+        </div>
+            
+        <h3>Card Details</h3>
+            
+        <h5>Accepted Cards :- </h5>
+        <div class="Cards">
+            <img src="images/visa.png" alt="" width="15%" height="100px">
+            <img src="images/rupay.jfif" alt="" width="15%" height="100px">
+            <img src="images/mastercard.png" alt="" width="15%" height="100px">
+            <img src="images/AE.png" alt="" width="15%" height="100px">
+        </div>
+        
+        <div id="cardtype">
+            <select id="floatingCardType" name="cardtype">
+                <option value="placeholder" style="display: none;">--Select Card--</option>
+                <option value="Visa" id="rupay">Visa</option>
+                <option value="Rupay" id="rupay">Rupay</option>
+                <option value="Mastercard" id="mastercard">MasterCard</option>
+                <option value="American_Express" id="AE">American Express</option>
+            </select>
+        </div>
+
+        <div id="usercard">
+            <h5 class="carddet">Card Details :- </h5>
+            <div class="card-grid">
+                <div class="cardgrid1 form-floating mb">
+                    <input type="number" class="form-control" id="floatingCardNumber" placeholder="Card Number">
+                    <label for="floatingCardNumber">Card Number</label>
+                </div>
+                <div class="cardgrid2 form-floating mb">
+                    <input type="text" class="form-control" id="floatingCardName" placeholder="Name On Card">
+                    <label for="floatingCardName">Name On Card</label>
+                </div>
+                <div class="contactgrid3 form-floating mb">
+                    <input type="month" class="form-control" id="floatingExpDate" placeholder="Exp Date">
+                    <label for="floatingExpDate">Exp Date</label>
+                </div>
+                <div class="contactgrid4 form-floating mb">
+                    <input type="number" max="3" class="form-control" id="floatingCVV" placeholder="CVV">
+                    <label for="floatingCVV">CVV</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mybuttons">
+            <input type="button" class="button" id="submitbutton" value="Register Now">
+            <input type="reset" value="Reset">
+        </div>
+        
+    </form>
+
+</body>
+</html>
